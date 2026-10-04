@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import include, path
 
 
 urlpatterns = [
@@ -8,5 +8,10 @@ urlpatterns = [
     path(
         "api/accounts/",
         include("accounts.urls")
+    ),
+
+    path(
+        "api/skills/",
+        include("skills.urls")
     ),
 ]
