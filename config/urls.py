@@ -27,4 +27,9 @@ urlpatterns = [
         "api/exchanges/",
         include("exchanges.urls")
     ),
+
+    path(
+        "api/reviews/",
+        include("reviews.urls")
+    ),
 ]
