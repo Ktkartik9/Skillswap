@@ -22,4 +22,9 @@ urlpatterns = [
         "api/matching/",
         include("matching.urls")
     ),
+
+    path(
+        "api/exchanges/",
+        include("exchanges.urls")
+    ),
 ]
